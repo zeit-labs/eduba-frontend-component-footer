@@ -6,7 +6,6 @@ import { ensureConfig } from '@edx/frontend-platform';
 import { AppContext } from '@edx/frontend-platform/react';
 
 import messages from './Footer.messages';
-import LanguageSelector from './LanguageSelector';
 
 ensureConfig([
   'LMS_BASE_URL',
@@ -35,39 +34,68 @@ class SiteFooter extends React.Component {
 
   render() {
     const {
-      supportedLanguages,
-      onLanguageSelected,
       logo,
       intl,
     } = this.props;
-    const showLanguageSelector = supportedLanguages.length > 0 && onLanguageSelected;
     const { config } = this.context;
 
     return (
       <footer
         role="contentinfo"
-        className="footer d-flex border-top py-3 px-4"
+        className="footer"
       >
-        <div className="container-fluid d-flex">
-          <a
-            className="d-block"
-            href={config.LMS_BASE_URL}
-            aria-label={intl.formatMessage(messages['footer.logo.ariaLabel'])}
-          >
-            <img
-              style={{ maxHeight: 45 }}
-              src={logo || config.LOGO_TRADEMARK_URL}
-              alt={intl.formatMessage(messages['footer.logo.altText'])}
-            />
-          </a>
-          <div className="flex-grow-1" />
-          {showLanguageSelector && (
-            <LanguageSelector
-              options={supportedLanguages}
-              onSubmit={onLanguageSelected}
-            />
-          )}
+        <div className="container container-footer">
+          <div className="container-col">
+            <div className="footer-logo">
+              <a
+                href={config.LMS_BASE_URL}
+                aria-label={intl.formatMessage(messages['footer.logo.ariaLabel'])}
+              >
+                <img
+                  style={{ maxHeight: 45 }}
+                  src={logo || config.LOGO_TRADEMARK_URL}
+                  alt={intl.formatMessage(messages['footer.logo.altText'])}
+                />
+              </a>
+            </div>
+          </div>
+          <div className="container-col">
+            <h4 className="footer-title">معلومات الاتصال</h4>
+            <ul className="footer-list">
+              <li>
+                شارع صلاح الدين الأيوبي
+                بغداد
+              </li>
+              <li>
+                +1125156363
+              </li>
+            </ul>
+          </div>
+          <div className="container-col">
+            <h4 className="footer-title">عن إيدوبا</h4>
+            <ul className="footer-list">
+              <li>الفريق المنفذ</li>
+              <li>الكادر التعليمي</li>
+              <li>سياسة الخصوصية</li>
+            </ul>
+
+          </div>
+          <div className="container-col">
+            <h4 className="footer-title">روابط مهمة</h4>
+            <ul className="footer-list">
+              <li>الصفحة الرئيسية</li>
+              <li>الأسئلة أكثر شيوعا</li>
+              <li>قائمة البرامج</li>
+            </ul>
+          </div>
         </div>
+        <div className="footer-divider-wrapper">
+          <div className="footer-divider" />
+        </div>
+        <div className="footer-copyright">
+          Copyright 2025. Eduba For Learning and Development
+        </div>
+
       </footer>
     );
   }
