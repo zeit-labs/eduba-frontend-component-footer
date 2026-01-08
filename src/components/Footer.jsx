@@ -9,7 +9,7 @@ import messages from './Footer.messages';
 
 ensureConfig([
   'LMS_BASE_URL',
-  'LOGO_TRADEMARK_URL',
+  'LOGO_WHITE_URL',
 ], 'Footer component');
 
 const EVENT_NAMES = {
@@ -53,7 +53,7 @@ class SiteFooter extends React.Component {
               >
                 <img
                   style={{ maxHeight: 45 }}
-                  src={logo || config.LOGO_TRADEMARK_URL}
+                  src={logo || config.LOGO_WHITE_URL}
                   alt={intl.formatMessage(messages['footer.logo.altText'])}
                 />
               </a>
