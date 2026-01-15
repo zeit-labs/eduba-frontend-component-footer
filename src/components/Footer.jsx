@@ -72,20 +72,20 @@ class SiteFooter extends React.Component {
             </ul>
           </div>
           <div className="container-col">
-            <h4 className="footer-title">عن إيدوبا</h4>
+            <h4 className="footer-title">عن eduba</h4>
             <ul className="footer-list">
-              <li>الفريق المنفذ</li>
-              <li>الكادر التعليمي</li>
-              <li>سياسة الخصوصية</li>
+              <li className="hidden">الفريق المنفذ</li>
+              <li className="hidden">الكادر التعليمي</li>
+              <li><a href="https://eduba.mohesr.gov.iq/privacy">سياسة الخصوصية</a></li>
             </ul>
 
           </div>
           <div className="container-col">
             <h4 className="footer-title">روابط مهمة</h4>
             <ul className="footer-list">
-              <li>الصفحة الرئيسية</li>
-              <li>الأسئلة أكثر شيوعا</li>
-              <li>قائمة البرامج</li>
+              <li><a href="https://apps.eduba.mohesr.gov.iq/learner-dashboard/">الصفحة الرئيسية</a></li>
+              <li><a href="https://eduba.mohesr.gov.iq/faq">الأسئلة أكثر شيوعا</a></li>
+              <li><a href="https://www.eduba.mohesr.gov.iq/ar/all-courses">قائمة البرامج</a></li>
             </ul>
           </div>
         </div>
