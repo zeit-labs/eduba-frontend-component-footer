@@ -67,34 +67,50 @@ class SiteFooter extends React.Component {
                 بغداد
               </li>
               <li>
-                +1125156363
+                <a
+                  href="tel:+1125156363"
+                >
+                  +1125156363
+                </a>
               </li>
             </ul>
           </div>
           <div className="container-col">
             <h4 className="footer-title">عن إيدوبا</h4>
             <ul className="footer-list">
-              <li>الفريق المنفذ</li>
-              <li>الكادر التعليمي</li>
-              <li>سياسة الخصوصية</li>
+              <li>
+                <a href="https://www.eduba.mohesr.gov.iq/privacy-policy">
+                  سياسة الخصوصية
+                </a>
+              </li>
             </ul>
 
           </div>
           <div className="container-col">
             <h4 className="footer-title">روابط مهمة</h4>
             <ul className="footer-list">
-              <li>الصفحة الرئيسية</li>
-              <li>الأسئلة أكثر شيوعا</li>
-              <li>قائمة البرامج</li>
+              <li>
+                <a href="https://www.eduba.mohesr.gov.iq/">
+                  الصفحة الرئيسية
+                </a>
+              </li>
+              <li>
+                <a href="https://www.eduba.mohesr.gov.iq/faq">
+                  الأسئلة أكثر شيوعا
+                </a>
+              </li>
+              <li>
+                <a href="https://www.eduba.mohesr.gov.iq/all-courses">
+                  قائمة البرامج
+                </a>
+              </li>
             </ul>
           </div>
         </div>
         <div className="footer-divider-wrapper">
           <div className="footer-divider" />
         </div>
-        <div className="footer-copyright">
-          Copyright 2025. Eduba For Learning and Development
-        </div>
+        <div className="footer-copyright">جميع الحقوق محفوظة © ٢٠٢٦ . eduba للتعلم والتطوير</div>
 
       </footer>
     );
