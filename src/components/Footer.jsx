@@ -69,6 +69,7 @@ class SiteFooter extends React.Component {
               <li>
                 <a
                   href="tel:+1125156363"
+                  className="tal-class"
                 >
                   +1125156363
                 </a>
