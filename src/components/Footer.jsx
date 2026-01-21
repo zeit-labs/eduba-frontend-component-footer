@@ -63,8 +63,7 @@ class SiteFooter extends React.Component {
             <h4 className="footer-title">معلومات الاتصال</h4>
             <ul className="footer-list">
               <li>
-                شارع صلاح الدين الأيوبي
-                بغداد
+                بغداد – الرصافة - المجمع التربوي - ساحة الطيران - قرب القصر الأبيض
               </li>
               <li>
                 <a
