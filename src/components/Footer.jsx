@@ -76,7 +76,7 @@ class SiteFooter extends React.Component {
             </ul>
           </div>
           <div className="container-col">
-            <h4 className="footer-title">عن إيدوبا</h4>
+            <h4 className="footer-title">عن eduba</h4>
             <ul className="footer-list">
               <li>
                 <a href="https://www.eduba.mohesr.gov.iq/privacy-policy">
