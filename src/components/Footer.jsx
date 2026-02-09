@@ -52,7 +52,7 @@ class SiteFooter extends React.Component {
                 aria-label={intl.formatMessage(messages['footer.logo.ariaLabel'])}
               >
                 <img
-                  style={{ maxHeight: 45 }}
+                  style={{ width: 220, height: 68 }}
                   src={logo || config.LOGO_WHITE_URL}
                   alt={intl.formatMessage(messages['footer.logo.altText'])}
                 />
