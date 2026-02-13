@@ -44,7 +44,7 @@ class SiteFooter extends React.Component {
         role="contentinfo"
         className="footer"
       >
-        <div className="container container-footer">
+        <div className="container-footer">
           <div className="container-col">
             <div className="footer-logo">
               <a
