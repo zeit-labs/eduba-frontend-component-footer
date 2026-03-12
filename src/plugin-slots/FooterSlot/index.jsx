@@ -15,7 +15,8 @@ const FooterSlot = () => {
     const script = document.createElement('script');
     script.src = 'https://app.fastbots.ai/embed.js';
     script.setAttribute('data-bot-id', 'cme10ffk609i9pa1nax0rlq7l');
-    script.async = true;
+    script.setAttribute('data_language', 'ar');
+    script.setAttribute('defer', 'defer');
     document.head.appendChild(script);
   }, []);
 
