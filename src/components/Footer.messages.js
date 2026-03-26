@@ -61,6 +61,11 @@ const messages = defineMessages({
     defaultMessage: 'قائمة البرامج',
     description: 'Link label for the programs list page.',
   },
+  'footer-courses-list': {
+    id: 'footer-courses-list',
+    defaultMessage: 'قائمة المساقات',
+    description: 'Link label for the courses list page.',
+  },
   'footer-links-portals': {
     id: 'footer-links-portals',
     defaultMessage: 'البوابات والخدمات الإلكترونية',

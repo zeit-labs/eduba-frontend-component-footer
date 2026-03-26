@@ -143,8 +143,13 @@ const FooterContent = ({ logo }) => {
               </a>
             </li>
             <li>
-              <a href={`${BASE_URL}${langPrefix}/all-courses`} onClick={handleExternalLinkClick}>
+              <a href={`${BASE_URL}${langPrefix}/programs`} onClick={handleExternalLinkClick}>
                 {intl.formatMessage(messages['footer-links-programs'])}
+              </a>
+            </li>
+            <li>
+              <a href={`${BASE_URL}${langPrefix}/courses`} onClick={handleExternalLinkClick}>
+                {intl.formatMessage(messages['footer-courses-list'])}
               </a>
             </li>
             <li>
