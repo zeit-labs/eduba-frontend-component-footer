@@ -63,7 +63,7 @@ const messages = defineMessages({
   },
   'footer-courses-list': {
     id: 'footer-courses-list',
-    defaultMessage: 'قائمة المساقات',
+    defaultMessage: 'قائمة المقررات',
     description: 'Link label for the courses list page.',
   },
   'footer-links-portals': {
