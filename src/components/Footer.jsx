@@ -12,13 +12,13 @@ import { getLanguageFromCookie } from '../hooks/useLanguageSwitcher';
 ensureConfig([
   'LMS_BASE_URL',
   'LOGO_WHITE_URL',
+  'MARKETING_SITE_BASE_URL'
 ], 'Footer component');
 
 const EVENT_NAMES = {
   FOOTER_LINK: 'edx.bi.footer.link',
 };
 
-const BASE_URL = 'https://www.eduba.mohesr.gov.iq';
 const MOHESR_URL = 'https://mohesr.gov.iq';
 
 // ─── Inner component ──────────────────────────────────────────────────────────
@@ -114,17 +114,17 @@ const FooterContent = ({ logo }) => {
           </h4>
           <ul className="footer-list">
             <li>
-              <a href={`${BASE_URL}${langPrefix}/about`} onClick={handleExternalLinkClick}>
+              <a href={`${config.MARKETING_SITE_BASE_URL}${langPrefix}/about`} onClick={handleExternalLinkClick}>
                 {intl.formatMessage(messages['footer-about-who-we-are'])}
               </a>
             </li>
             <li>
-              <a href={`${BASE_URL}${langPrefix}`} onClick={handleExternalLinkClick}>
+              <a href={`${config.MARKETING_SITE_BASE_URL}${langPrefix}`} onClick={handleExternalLinkClick}>
                 {intl.formatMessage(messages['footer-about-home'])}
               </a>
             </li>
             <li>
-              <a href={`${BASE_URL}/privacy-policy`} onClick={handleExternalLinkClick}>
+              <a href={`${config.MARKETING_SITE_BASE_URL}/privacy-policy`} onClick={handleExternalLinkClick}>
                 {intl.formatMessage(messages['footer-about-privacy-policy'])}
               </a>
             </li>
@@ -138,17 +138,17 @@ const FooterContent = ({ logo }) => {
           </h4>
           <ul className="footer-list">
             <li>
-              <a href={`${BASE_URL}/faq`} onClick={handleExternalLinkClick}>
+              <a href={`${config.MARKETING_SITE_BASE_URL}/faq`} onClick={handleExternalLinkClick}>
                 {intl.formatMessage(messages['footer-links-faq'])}
               </a>
             </li>
             <li>
-              <a href={`${BASE_URL}${langPrefix}/programs`} onClick={handleExternalLinkClick}>
+              <a href={`${config.MARKETING_SITE_BASE_URL}${langPrefix}/programs`} onClick={handleExternalLinkClick}>
                 {intl.formatMessage(messages['footer-links-programs'])}
               </a>
             </li>
             <li>
-              <a href={`${BASE_URL}${langPrefix}/courses`} onClick={handleExternalLinkClick}>
+              <a href={`${config.MARKETING_SITE_BASE_URL}${langPrefix}/courses`} onClick={handleExternalLinkClick}>
                 {intl.formatMessage(messages['footer-courses-list'])}
               </a>
             </li>
